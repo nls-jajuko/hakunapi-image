@@ -2,9 +2,6 @@
 
 hakunapi container image
 
-<https://github.com/nls-jajuko/hakunapi-image/pkgs/container/hakunapi-image>
-
-
 ```
 docker pull ghcr.io/nls-jajuko/hakunapi-image:release
 git clone https://github.com/nls-jajuko/hakunapi-image.git
