@@ -16,7 +16,7 @@ this might work for openstreetmap
 docker pull ghcr.io/nls-jajuko/hakunapi-image:release
 
 git clone https://github.com/nls-jajuko/hakunapi-image.git
-git clone https://github.com/nls-jajuko/hakunapi-html-cdn-leaflet.git --branch openlayers
+git clone https://github.com/nls-jajuko/hakunapi-html-cdn-leaflet.git --branch openstreetmap
 
 # 
 echo "formats.html.dir=/templates" >> ./hakunapi-image/gpkg/simple_addresses.properties
