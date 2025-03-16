@@ -10,7 +10,7 @@ docker run --publish 8080:8080 -v ./hakunapi-image/gpkg:/app -e HAKUNAPI_CONFIG_
 
 ```
 
-this might work for openstreetmap
+this might work to get openstreetmap background maps
 
 ```
 docker pull ghcr.io/nls-jajuko/hakunapi-image:release
