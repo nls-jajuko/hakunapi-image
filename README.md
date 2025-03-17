@@ -13,8 +13,8 @@ docker run --publish 8080:8080 -v ./hakunapi-image/gpkg:/app -e HAKUNAPI_CONFIG_
 try this to get openstreetmap background maps
 
 todo: 
-- add remoteipvalve or such to expose host and port to environmnet
-- fix servers.dev.url to use environment
+- fix servers.dev.url in properties to use env
+- add servers.dev.url as env to docker run
 
 ```
 docker pull ghcr.io/nls-jajuko/hakunapi-image:release
