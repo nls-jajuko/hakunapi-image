@@ -12,10 +12,6 @@ docker run --publish 8080:8080 -v ./hakunapi-image/gpkg:/app -e HAKUNAPI_CONFIG_
 
 try this to get openstreetmap background maps
 
-todo: 
-- fix servers.dev.url in properties to use env
-- add servers.dev.url as env to docker run
-
 ```
 docker pull ghcr.io/nls-jajuko/hakunapi-image:release
 
@@ -28,4 +24,9 @@ echo "formats.html.dir=/templates" >> ./hakunapi-image/gpkg/simple_addresses.pro
 docker run --publish 8080:8080 -v ./hakunapi-html-cdn-leaflet/templates:/templates -v ./hakunapi-image/gpkg:/app -e HAKUNAPI_CONFIG_PATH="/app/simple_addresses.properties" ghcr.io/nls-jajuko/hakunapi-image:release
 
 ```
+
+todo: 
+- fix servers.dev.url in properties to use env
+- add servers.dev.url as env to docker run
+
 
