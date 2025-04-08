@@ -1,6 +1,6 @@
 # hakunapi-image
 
-hakunapi container image
+hakunapi container image with some sample gpkg datasources
 
 ```
 docker pull ghcr.io/nls-jajuko/hakunapi-image:release
