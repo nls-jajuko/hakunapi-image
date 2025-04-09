@@ -5,6 +5,7 @@ hakunapi container image with some sample gpkg datasources
 ```
 docker pull ghcr.io/nls-jajuko/hakunapi-image:release
 
+# sample datasets
 git clone https://github.com/nls-jajuko/hakunapi-image.git
 
 docker run --publish 8080:8080 \
@@ -20,10 +21,11 @@ try this to get openstreetmap background maps
 ```
 docker pull ghcr.io/nls-jajuko/hakunapi-image:release
 
+# sample datasets
 git clone https://github.com/nls-jajuko/hakunapi-image.git
-git clone https://github.com/nls-jajuko/hakunapi-html-cdn-leaflet.git --branch openstreetmap
 
-# 
+# openstreetmap templates for html
+git clone https://github.com/nls-jajuko/hakunapi-html-cdn-leaflet.git --branch openstreetmap
 echo "formats.html.dir=/templates" >> ./hakunapi-image/gpkg/simple_addresses.properties
 
 docker run --publish 8080:8080 \
