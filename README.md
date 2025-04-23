@@ -16,6 +16,19 @@ docker run --publish 8080:8080 \
 
 ```
 
+Try this to get the recent  [#141](https://github.com/nlsfi/hakunapi/pull/141) hakunapi offset support
+```
+git clone https://github.com/nls-jajuko/hakunapi-image.git
+echo "collections.simple_addresses.pagination.strategy=hybrid" >> ./hakunapi-image/gpkg/simple_addresses.properties
+
+docker run --publish 8080:8080 \
+  -v ./hakunapi-image/gpkg:/app \
+  -e FEATURES_BASEURL="http://localhost:8080/features" \
+  -e HAKUNAPI_CONFIG_PATH="/app/simple_addresses.properties" \
+  ghcr.io/nls-jajuko/hakunapi-image:release
+```
+
+
 Try this to get OpenStreetmap background maps and templates. 
 
 ```
