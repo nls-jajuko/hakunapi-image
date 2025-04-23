@@ -16,7 +16,7 @@ docker run --publish 8080:8080 \
 
 ```
 
-try this to get openstreetmap background maps
+Try this to get OpenStreetmap background maps and templates. 
 
 ```
 docker pull ghcr.io/nls-jajuko/hakunapi-image:release
