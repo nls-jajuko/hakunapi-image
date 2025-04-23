@@ -18,6 +18,9 @@ docker run --publish 8080:8080 \
 
 Try this to get the recent  [#141](https://github.com/nlsfi/hakunapi/pull/141) hakunapi offset support
 ```
+docker pull ghcr.io/nls-jajuko/hakunapi-image:release
+
+# sample datasets (with offset parameter support)
 git clone https://github.com/nls-jajuko/hakunapi-image.git
 echo "collections.simple_addresses.pagination.strategy=hybrid" >> ./hakunapi-image/gpkg/simple_addresses.properties
 
