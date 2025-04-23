@@ -4,6 +4,12 @@ FROM maven AS build
 
 RUN git clone https://github.com/nlsfi/hakunapi.git
 WORKDIR /hakunapi
+
+# try build latest 
+git fetch origin pull/141/head:recent
+git switch recent
+#
+
 RUN mvn clean verify -q --fail-never
 RUN mvn clean package -Dmaven.test.skip
 
