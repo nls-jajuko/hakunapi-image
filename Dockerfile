@@ -18,6 +18,8 @@ FROM tomcat
 RUN mkdir /usr/local/tomcat/static
 COPY tomcat/server.xml /usr/local/tomcat/conf/
 COPY tomcat/index.html /usr/local/tomcat/static/
+COPY tomcat/000.html /usr/local/tomcat/static/
+COPY tomcat/404.html /usr/local/tomcat/static/
 
 COPY --from=build /hakunapi/webapp-jakarta/hakunapi-simple-webapp-jakarta/target/features.war /usr/local/tomcat/webapps/
 
