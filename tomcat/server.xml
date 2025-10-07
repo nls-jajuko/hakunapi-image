@@ -15,7 +15,7 @@
                />
     <Engine name="Catalina" defaultHost="localhost">
       <Host name="localhost"  appBase="webapps" unpackWARs="true" autoDeploy="true">
-  	    <Context docBase="${catalina.base}/static" path="/"   
+  	    <Context docBase="${catalina.base}/static" path="/" />
 		<Valve className="org.apache.catalina.valves.ErrorReportValve"
            errorCode.404="404.html"
            errorCode.0="000.html"
