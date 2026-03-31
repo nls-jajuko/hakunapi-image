@@ -8,7 +8,7 @@ WORKDIR /hakunapi
 # try build pull request 
 # RUN git fetch origin pull/141/head:recent
 # RUN git switch recent
-RUN git checkout refs/tags/1.6.0
+RUN git checkout refs/tags/1.7.0
 
 RUN mvn clean verify -q --fail-never
 RUN mvn clean package -Dmaven.test.skip
